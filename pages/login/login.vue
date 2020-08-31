@@ -6,9 +6,9 @@
 
 <script>
 	export default {
-		data(){
+		data() {
 			return {
-				
+
 			}
 		},
 		onLoad(options) {
@@ -20,9 +20,9 @@
 						success: (info) => {
 							console.log("登录成功",info);
 							// 跳转尝试
-							// uni.redirectTo({
-							// 	url:"../index/index"
-							// })
+							uni.redirectTo({
+								url:"../write/write"
+							})
 						},
 						fail: (error) => {
 							console.log(error)
