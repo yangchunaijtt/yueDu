@@ -134,6 +134,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 var _default =
 {
   data: function data() {
@@ -142,33 +144,54 @@ var _default =
 
   },
   onLoad: function onLoad(options) {
-    console.log("初始数据");
+    //微信
+
     uni.login({
       success: function success(res) {
-        console.log("login", res);
-        uni.getUserInfo({
-          success: function success(info) {
-            console.log("登录成功", info);
-            // 跳转尝试
-            uni.redirectTo({
-              url: "../write/write" });
-
-          },
-          fail: function fail(error) {
-            console.log(error);
-            uni.showToast({
-              title: "微信授权失败",
-              icon: none });
-
-          } });
-
-      },
-      fail: function fail(error) {
-        uni.showToast({
-          title: "微信授权失败",
-          icon: none });
+        console.log(res);
 
       } });
+
+
+
+    // app
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
