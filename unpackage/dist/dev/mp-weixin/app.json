@@ -1,42 +1,39 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/write/write",
-    "pages/my/my",
-    "pages/login/login",
-    "pages/editArt/editArt",
-    "pages/info/info"
+    "pages/home/index",
+    "pages/video/index",
+    "pages/videoPlay/index",
+    "pages/imgCategory/index",
+    "pages/album/index",
+    "pages/imgDetail/index"
   ],
   "subPackages": [],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "悦读",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "懂你找图",
+    "navigationBarBackgroundColor": "#000"
   },
   "tabBar": {
-    "color": "#707070",
-    "selectedColor": "#DE533A",
+    "color": "#8a8a8a",
+    "selectedColor": "#d4237a",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "文章",
-        "iconPath": "static/nav1.png",
-        "selectedIconPath": "static/nav1-a.png"
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "./static/icon/_home.png",
+        "selectedIconPath": "./static/icon/home.png"
       },
       {
-        "pagePath": "pages/write/write",
-        "text": "写作",
-        "iconPath": "static/nav2.png",
-        "selectedIconPath": "static/nav2-a.png"
-      },
-      {
-        "pagePath": "pages/my/my",
-        "text": "我的",
-        "iconPath": "static/nav3.png",
-        "selectedIconPath": "static/nav3-a.png"
+        "pagePath": "pages/video/index",
+        "text": "精美视频",
+        "iconPath": "./static/icon/_videocamera.png",
+        "selectedIconPath": "./static/icon/videocamera.png"
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap92.json"
 }

@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "u-image": "/uview-ui/components/u-image/u-image",
+    "u-section": "/uview-ui/components/u-section/u-section",
+    "go-detail": "/components/goDetail"
+  }
+}

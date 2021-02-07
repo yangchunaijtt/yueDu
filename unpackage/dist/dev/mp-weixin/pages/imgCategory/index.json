@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "图片分类",
+  "usingComponents": {
+    "u-tabs": "/uview-ui/components/u-tabs/u-tabs",
+    "u-image": "/uview-ui/components/u-image/u-image"
+  }
+}

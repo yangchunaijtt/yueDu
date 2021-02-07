@@ -1,59 +1,70 @@
 {
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/home/index",
 			"style": {
-				"enablePullDownRefresh": true
+				"navigationBarTitleText": "首页"
 			}
 		},
 		{
-			"path": "pages/write/write",
-			"style": {}
+			"path": "pages/video/index",
+			"style": {
+				"navigationBarTitleText": "精美图片"
+			}
 		},
 		{
-			"path": "pages/my/my",
-			"style": {}
+			"path": "pages/videoPlay/index",
+			"style": {
+				"navigationBarTitleText": "图片"
+			}
 		},
 		{
-			"path": "pages/login/login",
-			"style": {}
+			"path": "pages/imgCategory/index",
+			"style": {
+				"navigationBarTitleText": "图片分类"
+			}
 		},
 		{
-			"path": "pages/editArt/editArt",
-			"style": {}
+			"path": "pages/album/index",
+			"style": {
+				"navigationBarTitleText": "专辑详情"
+			}
 		},
 		{
-			"path": "pages/info/info",
-			"style": {}
+			"path": "pages/imgDetail/index",
+			"style": {
+				"navigationBarTitleText": "图片详情"
+			}
 		}
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "悦读",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "懂你找图",
+		"navigationBarBackgroundColor": "#000"
 	},
 	"tabBar": {
-		"color": "#707070",
-		"selectedColor": "#DE533A",
+		"color": "#8a8a8a",
+		"selectedColor": "#d4237a",
+		"backgroundColor": "#fff",
+		"position": "bottom",
+		"borderStyle": "black",
 		"list": [{
-				"pagePath": "pages/index/index",
-				"text": "文章",
-				"iconPath": "static/nav1.png",
-				"selectedIconPath": "static/nav1-a.png"
+				"pagePath": "pages/home/index",
+				"text": "首页",
+				"iconPath": "./static/icon/_home.png",
+				"selectedIconPath": "./static/icon/home.png"
 			},
 			{
-				"pagePath": "pages/write/write",
-				"text": "写作",
-				"iconPath": "static/nav2.png",
-				"selectedIconPath": "static/nav2-a.png"
-			},
-			{
-				"pagePath": "pages/my/my",
-				"text": "我的",
-				"iconPath": "static/nav3.png",
-				"selectedIconPath": "static/nav3-a.png"
+				"pagePath": "pages/video/index",
+				"text": "精美视频",
+				"iconPath": "./static/icon/_videocamera.png",
+				"selectedIconPath": "./static/icon/videocamera.png"
 			}
 		]
 	}
+
+
 }

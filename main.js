@@ -1,26 +1,16 @@
 import Vue from 'vue'
 import App from './App'
+import request from 'utils/request.js'
+import uView from "uview-ui";
+import moment from 'moment';
 
+// 设置语言为中文
+moment.locale("zh-cn");
+
+Vue.use(uView);
 Vue.config.productionTip = false
-
-Vue.prototype.checkLogin = function(backpage, backtype) {
-	var SUID = uni.getStorageSync('SUID');
-	var SRAND = uni.getStorageSync('SRAND');
-	var SNAME = uni.getStorageSync('SNAME');
-	var SFACE = uni.getStorageSync('SFACE');
-	if (SFACE == '' || SUID == '' || SRAND == '') {
-		uni.redirectTo({
-			url: "../login/login?backpage=" + backpage + "&backtype=" + backtype
-		})
-		return false;
-	}
-	return [SUID, SRAND, SNAME, SFACE];
-}
-
-var APITOKEN  = 'api2018';
-Vue.prototype.apiServer    = 'http://apiyuedu.hcoder.net/index.php?token='+APITOKEN+'&c=';
-Vue.prototype.staticServer = 'http://apiyuedu.hcoder.net/';
-
+Vue.prototype.request = request;
+Vue.prototype.CONFIGURL = 'http://157.122.54.189:9088';
 App.mpType = 'app'
 
 const app = new Vue({

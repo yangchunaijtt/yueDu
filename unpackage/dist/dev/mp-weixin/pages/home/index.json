@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "u-tabs": "/uview-ui/components/u-tabs/u-tabs",
+    "home-album": "/pages/home/home-album/index",
+    "home-category": "/pages/home/home-category/index",
+    "home-recommend": "/pages/home/home-recommend/index"
+  }
+}
